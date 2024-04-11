@@ -1,0 +1,276 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,300&family=Tiro+Devanagari+Marathi&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto Flex", sans-serif;
+  
+}
+body {
+  background: rgb(17, 17, 17);
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+.mainDiv {
+  margin: 30px -10px;
+  width: 98.4vw;
+  height: 60vh;
+  background-color: rgb(27, 27, 27);
+}
+nav {
+  width: 100%;
+  height: 1.5rem;
+  background-color: rgb(27, 27, 27);
+  display: flex;
+  justify-content: space-between;
+  padding: 7px 7px;
+}
+.rightArticle {
+  width: 60px;
+  display: flex;
+  justify-content: space-around;
+}
+.plusSign,
+.settings,
+.close {
+  color: rgb(128, 127, 127);
+}
+.plusSign:hover {
+  color: white;
+}
+.settings:hover {
+  color: white;
+}
+.close:hover {
+  color: white;
+}
+.Title {
+  padding: 10px 10px;
+  margin: 0px 7px 0px 22px  ;
+  width: 95%;
+  border: none;
+  color: rgb(231, 231, 231);
+  background-color: rgb(43, 43, 43);
+  outline: none;
+}
+.Title:hover {
+  background-color: rgb(34, 34, 34);
+}
+
+.search {
+  padding: 2px 2px;
+  margin: 7px 7px 7px 22px  ;
+  width: 98%;
+  border: none;
+  color: rgb(231, 231, 231);
+  background-color: rgb(54, 54, 54);
+  outline: none;
+}
+.search:hover {
+  background-color: rgb(34, 34, 34);
+}
+.heading {
+  padding: 1% 3%;
+  color: rgb(235, 235, 235);
+}
+.addNewNoteHere {
+  padding: 5px 10px;
+  margin: 7px 7px 7px 22px  ;
+  width: 95%;
+  height: 100px;
+  border: none;
+  outline: none;
+  /* border: 1px solid rgb(43, 43, 43); */
+  color: rgb(231, 231, 231);
+  background-color: rgb(43, 43, 43);
+}
+.addNewNoteHere:hover {
+  background-color: rgb(34, 34, 34);
+}
+.selectDiv{
+  padding: 20px;
+  /* margin: 0px 0px 60px 0px; */
+}
+.saveButton {
+  width: 95%;
+  margin: 7px 7px 7px 22px  ;
+  padding: 5px;
+  background-color: rgb(129, 129, 129);
+  border: none;
+  font-weight:500;
+}
+.saveButton:hover {
+  background-color: rgb(70, 69, 69);
+}
+.AllNotes {
+  color: rgb(223, 223, 223);
+  margin: 7px 7px 0px 25px;
+}
+.allNotesWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  padding-left: 20px;
+  height: 290px;
+  /* border: 1px solid; */
+}
+.allNotesWrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.updateBtn {
+  width: 120px;
+  font-size: 10px;
+  background-color: rgb(126, 126, 126);
+  border: none;
+  border-radius: 5px;
+  margin: 4px 4px 10px 20px;
+  /* font-weight: 600; */
+  padding:5px  2px;
+
+}
+
+.updateBtn:hover {
+  background-color: rgb(78, 189, 78);
+}
+.deleteBtn {
+  width: 50px;
+  font-size: 10px;
+  width: 45%;
+  background-color: rgb(126, 126, 126);
+  border: none;
+  border-radius: 5px;
+  /* font-weight: 600; */
+  padding:5px 2px;
+}
+.deleteBtn:hover {
+  background-color: rgb(179, 74, 74);
+}
+.innerDiv{
+  display: flex;
+  flex-direction: row;
+  /* border: 3px solid blue; */
+  flex-wrap: wrap;
+  height: 290px;
+  overflow-y: scroll;
+  color: gray;
+  /* position: relative; */
+}
+
+.innerDiv::-webkit-scrollbar{
+  display: none;
+}
+
+
+.outputDiv {
+  width: 298px;
+  height: 270px;
+  background-color: rgb(27, 27, 27);
+  margin : 15px  9px;
+  /* border-top: 5px solid rgb(208, 255, 0); */
+  border-radius: 5px;
+  /* border: 2px solid red; */
+}
+.outputDiv>div{
+  display: flex;
+ 
+}
+.outputDiv:hover{
+
+  transition-duration: 0.4s;
+  border-bottom: 5px solid yellow;
+}
+
+.dateP{
+  color: rgb(187, 184, 184);
+  font-size: 13px;
+  padding: 9px 10px;
+  width: 50%;
+  /* height: 20px; */
+  margin-bottom: 1px;
+  overflow-wrap: break-word;
+}
+.titleP{
+  color: rgb(187, 184, 184);
+  font-size: 17px;
+  padding: 9px 0 0 10px;
+  width: 95%;
+  /* height: 20px; */
+  margin-bottom: 1px;
+  overflow-wrap: break-word;
+
+  /* border: 1px solid forestgreen; */
+ 
+
+}
+.noteP{
+  color: gray;
+  font-size: 11px;
+  padding:0 10px;
+  width: 300px;
+  height: 125px;
+  /* border: 1px solid  red; */
+  overflow-wrap: break-word;
+  overflow-y: scroll;
+}
+.categoryP{
+  color: rgb(187, 184, 184);
+  font-size: 13px;
+  padding: 9px 10px;
+  width: 50%;
+  /* height: 20px; */
+  margin-bottom: 1px;
+  overflow-wrap: break-word;
+
+  /* border: 1px solid blue; */
+}
+.noteP::-webkit-scrollbar{
+  display: none;
+}
+.categoryHeading{
+  color: gray;
+  margin: 0 10px 0 20px;
+  /* padding: 0  0px ; */
+}
+.selectOptions{
+  color: gray;
+ 
+}
+#category{
+  background-color: rgb(53, 53, 53);
+  padding: 5px 50px ;
+  border: none;
+  outline: none;
+}
+#category:hover{
+  background-color: rgb(34, 34, 34);
+}
+
+
+
+
+
+
+
+
+
+
+.accMain{
+  width: 100vw;
+  height: 100vh;
+  background-color:rgb(43, 43, 43) ;
+}
+/* .acc2{
+  height: 40vh;
+} */
+
+
+.AccordionHeader{
+  background-color:rgb(43, 43, 43) ;
+}
+.AccordionBody{
+  background-color:rgb(43, 43, 43) ;
+
+}
